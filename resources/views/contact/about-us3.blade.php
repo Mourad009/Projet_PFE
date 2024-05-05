@@ -1,5 +1,5 @@
 
-@extends('user.user_dashboard')
+@extends('user.user_dashboard3')
 
 
 @section('user')
@@ -60,7 +60,7 @@
        
         <p>Si il ya un question tu peut me contactez nous a votre email suivant :</p>
         <br>
-    <form action="{{ route('sendmessage') }}" method="POST">
+    <form action="{{ route('sendmessage2') }}" method="POST">
     @csrf
     <textarea class="text-white" placeholder="Entrer un message" name="message" cols="75" rows="8" required></textarea>
     <br>

@@ -19,49 +19,51 @@ class UsersTableSeeder extends Seeder
 
             //admin
 
-            [
-                'name' => 'Admin',
-                'username' => 'admin',
-                'email' => 'admin@gmail.com',
-                'password' => Hash::make('111'),
-                'role' => 'admin',
-                'status' => 'active',
-                'photo' => 'https://via.placeholder.com/60', 
-                'phone' => '33445566', 
-                'address' => 'rim', 
+            // [
+            //     'name' => 'Admin',
+            //     'username' => 'admin',
+            //     'email' => 'admin@gmail.com',
+            //     'password' => Hash::make('111'),
+            //     'role' => 'admin',
+            //     'status' => 'active',
+            //     'photo' => 'https://via.placeholder.com/60', 
+            //     'phone' => '33445566', 
+            //     'address' => 'rim', 
 
-            ],
+            // ],
 
             //developer
 
             [
-                'name' => 'Developer',
-                'username' => 'developer',
-                'email' => 'developer@gmail.com',
-                'password' => Hash::make('111'),
+                'name' => 'Mouhamed Larabase',
+                'username' => 'Mouhamed Larabase',
+                'email' => 'medlarabase@gmail.com',
+                'password' => Hash::make('developer'),
                 'role' => 'developer',
                 'status' => 'active',
                 'photo' => 'https://via.placeholder.com/60', 
-                'phone' => '7777666', 
-                'address' => 'bamako', 
+                'phone' => '22445566', 
+                'address' => 'ayoun', 
 
             ],
 
             //user
 
-            [
-                'name' => 'User',
-                'username' => 'user',
-                'email' => 'user@gmail.com',
-                'password' => Hash::make('111'),
-                'role' => 'user',
-                'status' => 'active',
-                'photo' => 'https://via.placeholder.com/60', 
-                'phone' => '87887', 
-                'address' => 'bmd', 
+            // [
+            //     'name' => 'User',
+            //     'username' => 'user',
+            //     'email' => 'user@gmail.com',
+            //     'password' => Hash::make('111'),
+            //     'role' => 'user',
+            //     'status' => 'active',
+            //     'photo' => 'https://via.placeholder.com/60', 
+            //     'phone' => '87887', 
+            //     'address' => 'bmd', 
 
 
-            ],
+            // ],
+
+            
 
         ]);
     }

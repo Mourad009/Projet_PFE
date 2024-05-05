@@ -53,12 +53,12 @@
       <span class="text-danger">Attenation :</span><br>
 
       <br>
-       <p>Le dernier operation de la registrement c'est le dossier doit etre verifie, ce la nous permettez d'envoyer un message de confirmation a votre email, exp: <span class="text-success">Votre inscription a ete succes</span></p><br>
+       <p>Le dernier operation de la registrement c'est le dossier doit etre verifie, puis ce nous permettez d'envoyer un message de confirmation a votre email et un mot de passe de votre compte, puis si tu vais tu peut doit changer dans notre compte, exp: <span class="text-success">Votre inscription a été succes , mot de passe = 12345678</span></p><br>
        
 
        <br>
        
-        <p>Si il ya un question sur l'iscription envoyer a notre email suivant !</p>
+        <p>Si il ya un question tu peut me contactez nous a votre email suivant :</p>
         <br>
     <form action="{{ route('sendmessage') }}" method="POST">
     @csrf

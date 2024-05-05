@@ -49,7 +49,7 @@ class DevelopersController extends Controller
     ]);
 
     $notification = [
-        'message' => 'Developer created Successfully',
+        'message' => 'Developeur ajouter avec succsess',
         'alert-type' => 'success'
     ];
 
@@ -100,10 +100,10 @@ class DevelopersController extends Controller
 
     $developer->save();
 
-    $notification = [
-        'message' => 'Developer updated Successfully',
+    $notification = array(
+        'message' => 'Developeur modifier avec success',
         'alert-type' => 'success'
-    ];
+    );
 
     return redirect()->route('alldevelopers')->with($notification);
 }
@@ -113,7 +113,7 @@ class DevelopersController extends Controller
         Developers::findOrFail($id)->delete();
 
         $notification = array(
-            'message' => 'Developer Deleted Successfully',
+            'message' => 'Developeur supprimer avec success',
             'alert-type' => 'success'
         );
 

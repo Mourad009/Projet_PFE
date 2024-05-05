@@ -25,6 +25,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
 require __DIR__.'/auth.php';
 
 
@@ -103,6 +104,67 @@ Route::middleware(['auth','role:user'])->group(function(){
 
 Route::middleware(['auth','role:developer'])->group(function(){
 
+    Route::get('/dashboard-page/developer', [DevelopeurController::class, 'DashboardPage3'])->name('dashboardpage3');
+    Route::get('/logout-page/developer', [DevelopeurController::class, 'LogoutPage'])->name('logoutpage3');
+    Route::get('/exit-page/developer', [DevelopeurController::class, 'ExitPage'])->name('exitpage3');
+    Route::get('/profile-page/developer', [DevelopeurController::class, 'ProfilePage'])->name('profilepage3');
+    Route::post('/profile-page/store/developer', [DevelopeurController::class, 'ProfileStore'])->name('profilestore3');
+
+    ////// components routes /////
+
+    Route::get('/alerts/page/developer', [DevelopeurController::class, 'AlertsPage'])->name('alerts3');
+    Route::get('/badges/page/developer', [DevelopeurController::class, 'Badges'])->name('badges3');
+    Route::get('/buttons/page/developer', [DevelopeurController::class, 'Buttons'])->name('buttons3');
+    Route::get('/cards/page/developer', [DevelopeurController::class, 'Cards'])->name('cards3');
+    Route::get('/list-group/page/developer', [DevelopeurController::class, 'ListGroup'])->name('listgroup3');
+    Route::get('/navbar/page/developer', [DevelopeurController::class, 'Navbar'])->name('navbar3');
+    Route::get('/progress/page/developer', [DevelopeurController::class, 'Progress'])->name('progress3');
+    
+
+    // advanced ui routes
+
+
+     Route::get('/sortable/page/developer', [DevelopeurController::class, 'Sortable'])->name('sortable3');
+     Route::get('/Sweet-Alert/page/developer', [DevelopeurController::class, 'SweetAlert'])->name('sweetalert3');
+
+        // forms routes
+
+        Route::get('/basic-forms/page/developer', [DevelopeurController::class, 'Basic'])->name('basic3');
+        Route::get('/advanced-forms/page/developer', [DevelopeurController::class, 'Advanced'])->name('advanced3');
+        Route::get('/editor-forms/page/developer', [DevelopeurController::class, 'Editor'])->name('editor3');
+
+        // routes charts
+
+        Route::get('/apex/page/developer', [DevelopeurController::class, 'Apex'])->name('apex3');
+        Route::get('/chartjs/page/developer', [DevelopeurController::class, 'Chartjs'])->name('chartjs3');
+        Route::get('/flot/page/developer', [DevelopeurController::class, 'Flot'])->name('flot3');
+
+
+            //////// tables routes ////////////
+        Route::get('/basic/table/developer', [DevelopeurController::class, 'BasicTable'])->name('basictable3');
+        Route::get('/data/table/developer', [DevelopeurController::class, 'DataTable'])->name('datatable3');
+
+        /////////////////////// icons routes /////////////
+
+        Route::get('/feather-icons/page/developer', [DevelopeurController::class, 'Feather'])->name('feather3');
+        Route::get('/flag-icons/page/developer', [DevelopeurController::class, 'Flag'])->name('flag3');
+
+
+        Route::get('/about-us/page/developer', [DevelopeurController::class, 'AboutUs'])->name('aboutus3');
+
+
+        ///// mail message
+        Route::post('/send__message', [MessageController::class, 'sendMessage'])->name('sendmessage2');
+
+
+        ///////////////// postes routes ////////////////////////
+
+
+
+
+        
+        
+        
 
 
 });
