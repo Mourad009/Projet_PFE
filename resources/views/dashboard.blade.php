@@ -55,7 +55,9 @@
                     
                 </div>
             </div>
+            <br>
             <div>
+                <img width="1400px" src="{{asset ('logo/bg.gif')}}" alt="">
             </div>
         </div>
         
