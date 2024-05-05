@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('body');
             $table->string('files')->nullable();
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
