@@ -28,25 +28,23 @@ class PostesController extends Controller
         'body' => 'required',
         'files' => 'required',
         'link' => 'required',
-        
-        
     ]);
 
     // Téléchargez et stockez l'image dans le dossier public
     $imageName = time() . '.' . $request->file('files')->extension();
     $request->file('files')->move(public_path('logo/postes_files'), $imageName);
 
-    Postes::create([
-        'files' => $imageName, // Enregistrez le nom du fichier dans la base de données
-        'title' => $request->title,
-        'body' => $request->body,
-        'link' => $request->link,
-
-        
-    ]);
+    $poste = new Postes();
+    $poste->files = $imageName;
+    $poste->title = $request->title;
+    $poste->body = $request->body;
+    $poste->link = $request->link;
+    // Spécifiez l'ID de l'utilisateur connecté comme user_id
+    $poste->developer_id = Auth::id();
+    $poste->save();
 
     $notification = [
-        'message' => 'Poste ajouter avec succsess',
+        'message' => 'Poste ajouté avec succès',
         'alert-type' => 'success'
     ];
 
@@ -55,6 +53,10 @@ class PostesController extends Controller
     public function EditPoste($id)
     {
         $postes = Postes::findOrFail($id);
+        // Vérifier si l'utilisateur connecté est l'auteur du poste
+        if (Auth::id() != $postes->developer_id) {
+            abort(403, 'action no autorisee.');
+        }
         return view('postes\edit_poste', compact('postes'));
     }
 
@@ -103,10 +105,14 @@ class PostesController extends Controller
 
     public function DeletePoste($id)
     {
-        Postes::findOrFail($id)->delete();
-
+        $poste = Postes::findOrFail($id);
+        // Vérifier si l'utilisateur connecté est l'auteur du poste
+        if (Auth::id() != $poste->developer_id) {
+            abort(403, 'action no autorisee.');
+        }
+        $poste->delete();
         $notification = array(
-            'message' => 'Poste supprimer avec success',
+            'message' => 'Poste supprimé avec succès',
             'alert-type' => 'success'
         );
 

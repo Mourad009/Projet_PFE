@@ -86,8 +86,10 @@
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">Tout les developeurs</h6>
-                <div class="table-responsive">
+                <div class="table-responsive"><br>
+                <p class="btn btn-inverse-info">Recherché par : Technologie</p><br><br>
                   <table id="dataTableExample" class="table">
+                  
                     <thead>
                       <tr>
                         <th> Image</th>

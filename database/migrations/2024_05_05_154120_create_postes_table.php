@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('body');
             $table->string('files')->nullable();
             $table->string('link')->nullable();
+            $table->string('developer_id');
             $table->timestamps();
         }); 
     }
