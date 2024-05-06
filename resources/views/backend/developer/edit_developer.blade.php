@@ -17,7 +17,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h6 class="card-title">Edit Developer</h6>
+            <h6 class="card-title">Modifier developeur</h6>
             <br>
             <br>
             <form class="forms-sample" method="POST" action="{{ route('updatedeveloper')}}" enctype="multipart/form-data">
@@ -26,7 +26,7 @@
                 <input type="hidden" name="id" value="{{$developers->id}}">
 
                 <div class="mb-3">
-                    <label for="developer_image" class="form-label">Developer Image</label>
+                    <label for="developer_image" class="form-label"> Image</label>
                     <input type="file" class="form-control" id="image" name="developer_image">
                     <div class="mb-3">
                         <br>
@@ -36,42 +36,42 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="developer_name" class="form-label">Developer Name</label>
+                    <label for="developer_name" class="form-label"> Nom</label>
                     <input type="text" name="developer_name" class="form-control @error('developer_name') is-invalid @enderror" value="{{ $developers->developer_name }}">
                     @error('developer_name')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="developer_email" class="form-label">Developer Email</label>
+                    <label for="developer_email" class="form-label"> Email</label>
                     <input type="text" name="developer_email" class="form-control @error('developer_email') is-invalid @enderror" value="{{ $developers->developer_email }}">
                     @error('developer_email')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="developer_tag" class="form-label">Developer Tag</label>
+                    <label for="developer_tag" class="form-label"> Technologie</label>
                     <input type="text" name="developer_tag" class="form-control @error('developer_tag') is-invalid @enderror" value="{{ $developers->developer_tag }}">
                     @error('developer_tag')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="developer_phone" class="form-label">Developer Phone</label>
+                    <label for="developer_phone" class="form-label"> Telephone</label>
                     <input type="text" name="developer_phone" class="form-control @error('developer_phone') is-invalid @enderror" value="{{ $developers->developer_phone }}">
                     @error('developer_phone')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="developer_category" class="form-label">Developer Category</label>
+                    <label for="developer_category" class="form-label"> Categorie</label>
                     <input type="text" name="developer_category" class="form-control @error('developer_category') is-invalid @enderror" value="{{ $developers->developer_category }}">
                     @error('developer_category')
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label for="developer_price_services" class="form-label">Developer Price_Services</label>
+                    <label for="developer_price_services" class="form-label"> Prix des Services</label>
                     <input type="text" name="developer_price_services" class="form-control @error('developer_price_services') is-invalid @enderror" value="{{ $developers->developer_price_services }}">
                     @error('developer_price_services')
                     <span class="text-danger">{{$message}}</span>
@@ -79,7 +79,7 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-primary me-2">Edit</button>
+                <button type="submit" class="btn btn-primary me-2">Modifier</button>
             </form>
 
             

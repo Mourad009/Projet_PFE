@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Developers;
+use App\Models\Postes;
 
 
 
@@ -16,6 +17,7 @@ class AdminController extends Controller
         $developers = Developers::latest()->get();
         $totalUsers = User::count();
         $totalDevelopers = Developers::count();
+        
 
         return view('user\index', compact('developers','totalUsers','totalDevelopers'));
     }
@@ -182,6 +184,26 @@ class AdminController extends Controller
         return view('icons\flag-icons');
     }
 
+    //// posts method
+
+    public function AllPosts(){
+
+
+        $postes = Postes::latest()->get();
+        return view('postes\postes_admin', compact('postes'));
+    }
+
+    public function DeletePoste($id)
+    {
+        Postes::findOrFail($id)->delete();
+
+        $notification = array(
+            'message' => 'Poste supprimer avec success',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+    }
 
     
 

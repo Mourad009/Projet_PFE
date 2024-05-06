@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Developers;
+use App\Models\Postes;
 
 class UserController extends Controller
 {
@@ -181,7 +182,14 @@ class UserController extends Controller
         return view('icons\flag-icons2');
     }
 
-    ///// developers method for user
+    ///// postes method for user
+
+    public function AllPosts(){
+
+
+        $postes = Postes::latest()->get();
+        return view('postes\postes_user', compact('postes'));
+    }
 
     
     

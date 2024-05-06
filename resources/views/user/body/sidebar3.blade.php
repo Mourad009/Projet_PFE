@@ -29,10 +29,10 @@
             <div class="collapse" id="em">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Tout les Postes</a>
+                  <a href="{{ route('allpostes') }}" class="nav-link">Tout les Postes</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Ajouter Poste</a>
+                  <a href="{{ route('addposte') }}" class="nav-link">Ajouter Poste</a>
                 </li>
                 
               </ul>
@@ -116,7 +116,7 @@
                   <a href="{{ route('basic3') }}" class="nav-link">Elements Essentiel</a>
                 </li>
                 <li class="nav-item">
-                  <a href="{{ route('advanced3') }}" class="nav-link">Elements Advancé</a>
+                  <a href="{{ route('advanced3') }}" class="nav-link">Elements Avancé</a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('editor3') }}" class="nav-link">Editeurs</a>
@@ -181,7 +181,7 @@
               </ul>
             </div>
           </li> 
-          <li class="nav-item nav-category">Contacte</li>
+          <li class="nav-item nav-category">Nos-Contacte</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" role="button" aria-expanded="false" aria-controls="general-pages">
               <i class="link-icon" data-feather="book"></i>

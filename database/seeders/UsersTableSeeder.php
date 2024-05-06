@@ -34,18 +34,30 @@ class UsersTableSeeder extends Seeder
 
             //developer
 
-            [
-                'name' => 'Mouhamed Larabase',
-                'username' => 'Mouhamed Larabase',
-                'email' => 'medlarabase@gmail.com',
-                'password' => Hash::make('developer'),
-                'role' => 'developer',
-                'status' => 'active',
-                'photo' => 'https://via.placeholder.com/60', 
-                'phone' => '22445566', 
-                'address' => 'ayoun', 
+            // [
+            //     'name' => 'Mouhamed Larabase',
+            //     'username' => 'Mouhamed Larabase',
+            //     'email' => 'medlarabase@gmail.com',
+            //     'password' => Hash::make('developer'),
+            //     'role' => 'developer',
+            //     'status' => 'active',
+            //     'photo' => 'https://via.placeholder.com/60', 
+            //     'phone' => '22445566', 
+            //     'address' => 'ayoun', 
 
-            ],
+            // ],
+            // [
+            //     'name' => 'Seyve Dine Ali',
+            //     'username' => 'Seyve Dine Ali',
+            //     'email' => 'seyvedin-ali@gmail.com',
+            //     'password' => Hash::make('developer'),
+            //     'role' => 'developer',
+            //     'status' => 'active',
+            //     'photo' => 'https://via.placeholder.com/60', 
+            //     'phone' => '22445566', 
+            //     'address' => 'ayoun', 
+
+            // ],
 
             //user
 

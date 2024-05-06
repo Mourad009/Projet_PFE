@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\backend\DevelopersController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PostesController;
 use App\Http\Controllers\DevelopeurController;
 use App\Http\Controllers\LocalController;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,12 @@ Route::middleware(['auth','role:user'])->group(function(){
 
     // routes language
     //Route::post('/locale', [LocalController::class, 'setLocale']);
+
+    /// postes routes
+
+    Route::get('/all/postes/user', [UserController::class, 'AllPosts'])->name('allposts2');
+
+
 
     Route::get('/dashboard-page/user', [UserController::class, 'DashboardPage2'])->name('dashboardpage2');
     Route::get('/logout-page/user', [UserController::class, 'LogoutPage'])->name('logoutpage2');
@@ -160,7 +167,17 @@ Route::middleware(['auth','role:developer'])->group(function(){
         ///////////////// postes routes ////////////////////////
 
 
-
+        Route::controller(PostesController::class)->group(function(){
+            Route::get('/all/postes', 'AllPostes')->name('allpostes');
+            Route::get('/add/poste', 'AddPoste')->name('addposte');
+            Route::get('/edit/poste/{id}', 'EditPoste')->name('editposte');
+            Route::get('/delete/poste/{id}', 'DeletePoste')->name('deleteposte');
+            Route::post('/store/poste', 'StorePoste')->name('storeposte');
+            Route::post('/update/poste', 'UpdatePoste')->name('updateposte');
+            
+        
+        
+        });
 
         
         
@@ -241,6 +258,10 @@ Route::middleware(['auth','role:admin'])->group(function(){
 
         Route::post('/send-message', [MessageController::class, 'sendMessage'])->name('send.message');
 
+        //////////// postes routes 
+
+        Route::get('/all/postes/admin', [AdminController::class, 'AllPosts'])->name('allposts');
+        Route::get('/delete/poste/admin/{id}', [AdminController::class, 'DeletePoste'])->name('deletepost');
 
 
     

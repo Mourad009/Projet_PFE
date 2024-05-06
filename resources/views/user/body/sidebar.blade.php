@@ -51,7 +51,7 @@
             <div class="collapse" id="em">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Tout les Postes</a>
+                  <a href="{{ route('allposts')}}" class="nav-link">Tout les Postes</a>
                 </li>
               </ul>
             </div>
@@ -134,7 +134,7 @@
                   <a href="{{ route('basic') }}" class="nav-link">Elements Essentiel</a>
                 </li>
                 <li class="nav-item">
-                  <a href="{{ route('advanced') }}" class="nav-link">Elements Advancé</a>
+                  <a href="{{ route('advanced') }}" class="nav-link">Elements Avancé</a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('editor') }}" class="nav-link">Editeurs</a>
