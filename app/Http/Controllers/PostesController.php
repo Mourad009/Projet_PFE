@@ -27,6 +27,8 @@ class PostesController extends Controller
         'title' => 'required',
         'body' => 'required',
         'files' => 'required',
+        'link' => 'required',
+        
         
     ]);
 
@@ -38,6 +40,8 @@ class PostesController extends Controller
         'files' => $imageName, // Enregistrez le nom du fichier dans la base de données
         'title' => $request->title,
         'body' => $request->body,
+        'link' => $request->link,
+
         
     ]);
 
@@ -59,6 +63,7 @@ class PostesController extends Controller
     $request->validate([
         'title' => 'required',
         'body' => 'required',
+        'link' => 'required',
     ]);
 
     $poste = Postes::findOrFail($request->id);
@@ -83,6 +88,8 @@ class PostesController extends Controller
     // Mettez à jour les autres champs
     $poste->title = $request->title;
     $poste->body = $request->body;
+    $poste->link = $request->link;
+
 
     $poste->save();
 

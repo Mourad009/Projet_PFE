@@ -1,14 +1,15 @@
 <link rel="icon" type="image/png" href="{{ asset('logo/favicon.png')}}">
+<title> Mauri - Developer | login</title>
 
-
-<x-guest-layout class="container">
+<x-guest-layout class="container" >
 
 <style type="text/css">
     
-    .ms-3 {
-    margin-left: 1rem; /* Ajoute une marge à gauche */
-        }
+            .ms-3 {
+            margin-left: 1rem; /* Ajoute une marge à gauche */
+                }
 
+        
         .custom-button {
             /* Vos styles personnalisés pour le bouton */
             background-color: blue;
@@ -58,7 +59,7 @@
         <div class="block mt-4">
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
-                <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
+                <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Souviens de moi') }}</span>
             </label>
         </div>
         <div class="flex items-center justify-end mt-4">

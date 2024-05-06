@@ -29,7 +29,6 @@ class DevelopersController extends Controller
         'developer_phone' => 'required',
         'developer_category' => 'required',
         'developer_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        'developer_price_services' => 'required',
 
     ]);
 
@@ -44,7 +43,6 @@ class DevelopersController extends Controller
         'developer_tag' => $request->developer_tag,
         'developer_phone' => $request->developer_phone,
         'developer_category' => $request->developer_category,
-        'developer_price_services' => $request->developer_price_services,
 
     ]);
 
@@ -70,7 +68,6 @@ class DevelopersController extends Controller
         'developer_phone' => 'required',
         'developer_category' => 'required',
         'developer_image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-        'developer_price_services' => 'required',
 
     ]);
 
@@ -95,7 +92,6 @@ class DevelopersController extends Controller
     $developer->developer_tag = $request->developer_tag;
     $developer->developer_phone = $request->developer_phone;
     $developer->developer_category = $request->developer_category;
-    $developer->developer_price_services = $request->developer_price_services;
 
 
     $developer->save();

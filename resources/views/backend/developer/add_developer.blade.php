@@ -65,14 +65,7 @@
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
-                <div class="mb-3">
-                    <label for="developer_price_services" class="form-label"> Prix des Services</label>
-                    <input type="text" name="developer_price_services" class="form-control @error('developer_price_services') is-invalid @enderror">
-                    @error('developer_price_services')
-                    <span class="text-danger">{{$message}}</span>
-                    @enderror
-                </div>
-
+                
                 <button type="submit" class="btn btn-primary me-2">Ajouter</button>
             </form>
 

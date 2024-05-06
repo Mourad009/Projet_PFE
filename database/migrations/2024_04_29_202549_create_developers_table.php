@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('developer_tag');
             $table->string('developer_phone');
             $table->string('developer_category');
-            $table->string('developer_price_services')->nullable();;
+            //$table->string('developer_price_services')->nullable();;
             $table->timestamps();
         });
     }

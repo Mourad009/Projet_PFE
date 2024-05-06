@@ -22,6 +22,8 @@
               <div class="card-body">
                 <h5 class="card-title">{{$item->title}}</h5>
                 <p class="card-text mb-3">{{$item->body}}</p>
+                <p><a  href="{{$item->link}}"  alt="ajouter une link" ><i data-feather="link">{{$item->link}}</i></a></p><br>
+
                 <div style="text-align: center;">
 
                 <a  href="{{ route('deletepost', $item->id) }}" class="btn btn-inverse-danger" id="delete"><i data-feather="trash-2"></i>Supprimer</a>

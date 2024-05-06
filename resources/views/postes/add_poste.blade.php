@@ -44,6 +44,13 @@
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
+                <div class="mb-3">
+                    <label for="link" class="form-label">Link</label>
+                    <input type="tex" name="link" class="form-control @error('link') is-invalid @enderror">
+                    @error('link')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+                </div>
 
                 <button type="submit" class="btn btn-primary me-2">Publier</button>
             </form>

@@ -34,12 +34,12 @@
       <h2 style="font-family: elephant;">Information pour l'inscription a notre site</h2><br>
       <h4 class="card-text mb-3">faire les etapes suivantes pour terminer votre registrement  :</h4><br>
       <h4>Etape 1: Introduction </h4><br>
-      <h6>1- Donner une introduction sur vous et envoyer les fichiers suivantes a notre email:</h6>
+      <h6>1- Donner une introduction sur vous avec ta niveau academique et envoyer les termes suivantes a notre email:</h6>
       <h6>2- Email</h6>
       <h6>3- Telephone</h6>
       <h6>4- Address</h6>
       <h6>5- Technologie qui vous etez utiliser </h6>
-      <h6>6- Prix de ces servics</h6><br>
+      <br>
 
       <h4>Etape 2: Envoyer le dossier suivant :</h4><br>
       <h6>1- Image 60*60 <span class="text-danger">*obligatoire</span></h6>

@@ -48,6 +48,13 @@
                     <span class="text-danger">{{$message}}</span>
                     @enderror
                 </div>
+                <div class="mb-3">
+                    <label for="link" class="form-label">Link</label>
+                    <input type="text" name="link" class="form-control @error('link') is-invalid @enderror" value="{{ $postes->link }}">
+                    @error('link')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+                </div>
                 
                 
                 

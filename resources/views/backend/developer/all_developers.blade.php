@@ -26,7 +26,6 @@
                         <th> Technologie</th>
                         <th> Telephone</th>
                         <th> Categorie</th>
-                        <th> Prix des Services</th>
                         <th>Action</th>
                         
                       </tr>
@@ -44,7 +43,6 @@
                         <td>{{$item->developer_tag}}</td>
                         <td>{{$item->developer_phone}}</td>
                         <td>{{$item->developer_category}}</td>
-                        <td>{{$item->developer_price_services}}</td>
                         <td >
                             <a  href="{{ route('editdeveloper', $item->id) }}" class="btn btn-inverse-warning"><i data-feather="edit"></i>Modifier</a>
                             <a  href="{{ route('deletedeveloper', $item->id) }}" class="btn btn-inverse-danger" id="delete"><i data-feather="trash-2"></i>Supprimer</a>

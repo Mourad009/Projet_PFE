@@ -94,7 +94,6 @@
                         <th>Technologie</th>
                         <th>Telephone</th>
                         <th>Categorie</th>
-                        <th>Prix des services</th>
                         
                         
                       </tr>
@@ -112,7 +111,6 @@
                         <td>{{$item->developer_tag}}</td>
                         <td>{{$item->developer_phone}}</td>
                         <td>{{$item->developer_category}}</td>
-                        <td>{{$item->developer_price_services}}</td>
                       </tr>
                       @endforeach
                     </tbody>
