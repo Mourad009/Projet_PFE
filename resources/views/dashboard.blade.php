@@ -1,6 +1,6 @@
 
 <link rel="icon" type="image/png" href="{{ asset('logo/favicon.png')}}">
-<title>Mauri-developer | Sortir - Acceil</title>
+<title>Mauri - Developpeur | Sortir - Acceil</title>
 
 <x-app-layout>
     <style type="text/css">

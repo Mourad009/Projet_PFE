@@ -29,7 +29,7 @@
 
 	
 
-	<title>Mauri - Developer</title>
+	<title>Mauri - Developpeur</title>
 	<link rel="stylesheet" href="{{ asset('backend/assets/vendors/cropperjs/cropper.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('backend/assets/vendors/sweetalert2/sweetalert2.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('backend/assets/vendors/prismjs/themes/prism.css')}}">	
