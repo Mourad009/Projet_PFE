@@ -32,7 +32,7 @@
         </h2>
 
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ __("Assurer que vous etez faire le mis a jour de votre profile") }}
+            {{ __("Assurer que vous étez faire le mis à jour de votre profile") }}
         </p>
     </header>
 
@@ -61,13 +61,13 @@
                         {{ __('Votre email inverifier.') }}
 
                         <button form="send-verification" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
-                            {{ __('Cliker ici pour envoyer la verifiction de notre email') }}
+                            {{ __('Clicker ici pour envoyer la verifiction de notre email') }}
                         </button>
                     </p>
 
                     @if (session('status') === 'verification-link-sent')
                         <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
-                            {{ __('Nouvau verification link a ete envoye a votre email address.') }}
+                            {{ __('Nouvau verification link a été envoyé a votre email address.') }}
                         </p>
                     @endif
                 </div>

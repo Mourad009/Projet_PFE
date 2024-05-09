@@ -6,7 +6,7 @@
         </h2>
 
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ __('Tout les resources vas disparais !') }}
+            {{ __('Tout les resources vas disparaient !') }}
         </p>
     </header>
 
@@ -25,7 +25,7 @@
             </h2>
 
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                {{ __('Tout les resources vas disparais !') }}
+                {{ __('Tout les resources vas disparaient !') }}
             </p>
 
             <div class="mt-6">
