@@ -22,9 +22,9 @@
             <br>
             <form class="forms-sample" method="POST" action="{{ route('storeposte') }}" enctype="multipart/form-data">
                 @csrf
-
                 <div class="mb-3">
                     <label for="files" class="form-label">Fichier</label>
+                    <span class="text-danger">NB : extension = jpg,jpeg,png,svg,webp</span>
                     <input type="file" class="form-control @error('files') is-invalid @enderror" id="image" name="files">
                     @error('files')
                     <span class="text-danger">{{$message}}</span>
@@ -46,10 +46,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="link" class="form-label">Link</label>
-                    <input type="tex" name="link" class="form-control @error('link') is-invalid @enderror">
-                    @error('link')
-                    <span class="text-danger">{{$message}}</span>
-                    @enderror
+                    <input type="tex" name="link" class="form-control">
+                    
                 </div>
 
                 <button type="submit" class="btn btn-primary me-2">Publier</button>

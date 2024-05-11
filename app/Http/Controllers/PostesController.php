@@ -26,8 +26,8 @@ class PostesController extends Controller
     $request->validate([
         'title' => 'required',
         'body' => 'required',
-        'files' => 'required',
-        'link' => 'required',
+        'files' => 'required|mimes:jpg,jpeg,png,svg,webp',
+        
     ]);
 
     // Téléchargez et stockez l'image dans le dossier public
@@ -39,7 +39,7 @@ class PostesController extends Controller
     $poste->title = $request->title;
     $poste->body = $request->body;
     $poste->link = $request->link;
-    // Spécifiez l'ID de l'utilisateur connecté comme user_id
+    // Spécifiez l'ID de l'utilisateur connecté comme developer_id
     $poste->developer_id = Auth::id();
     $poste->save();
 
@@ -65,7 +65,7 @@ class PostesController extends Controller
     $request->validate([
         'title' => 'required',
         'body' => 'required',
-        'link' => 'required',
+        
     ]);
 
     $poste = Postes::findOrFail($request->id);
