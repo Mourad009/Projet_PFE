@@ -6,7 +6,7 @@
 
 <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
   <div>
-    <h4 class="mb-3 mb-md-0">Acceil</h4>
+    <h4 class="mb-3 mb-md-0">Accueil</h4>
   </div>
   <div class="d-flex align-items-center flex-wrap text-nowrap">
     <div class="input-group flatpickr wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">

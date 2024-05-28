@@ -1,4 +1,5 @@
 <link rel="icon" type="image/png" href="{{ asset('logo/favicon.png')}}">
+<title> Mauri - Developpeur | Registre </title>
 
 <x-guest-layout>
 

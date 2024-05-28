@@ -10,7 +10,7 @@
 	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
   <link rel="icon" type="image/png" href="{{ asset('logo/favicon.png')}}">
 
-	<title>Mauri-developer | Sortir</title>
+	<title>Mauri - Developpeur | Sortir</title>
 
     <style type="text/css">
         .authlogin-side-wrapper{
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-md-8 ps-md-0">
                   <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Mauri<span>Developer</span></a>
+                    <a href="#" class="noble-ui-logo logo-light d-block mb-2">Mauri<span>Developpeur</span></a>
                     <h5 class="text-muted fw-normal mb-4">Nous espérons que vous avez bénéficié</h5>
 
 
@@ -74,7 +74,7 @@
                       </div>
                       <div>
                         <button class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
-                          <a href=" {{ route('dashboardpage2')}}"><i data-feather="log-in"> </i> ACCEIL</a>
+                          <a href=" {{ route('dashboardpage2')}}"><i data-feather="log-in"> </i> ACCUEIL</a>
                         </button> <br><br>
                         <button class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
                         <a href=" {{ route('dashboard')}}"><i data-feather="log-out"></i>  SORTIR</a>

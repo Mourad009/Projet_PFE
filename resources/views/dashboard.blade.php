@@ -41,7 +41,7 @@
             </div>
         <x-primary-button class="ms-3 custom-button" >
             
-        <a href=" {{ route('dashboardpage')}}"><i data-feather="log-in"></i>ACCEIL</a>
+        <a href=" {{ route('dashboardpage')}}"><i data-feather="log-in"></i>ACCUEIL</a>
        </x-primary-button>
     </div>
     </x-slot>
@@ -57,7 +57,7 @@
             </div>
             <br>
             <div>
-                <img width="1400px" src="{{asset ('logo/bg.gif')}}" alt="">
+                <img width="1400px" src="{{asset ('logo/dash.png')}}" alt="">
             </div>
         </div>
         

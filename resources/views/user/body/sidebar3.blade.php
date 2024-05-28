@@ -15,7 +15,7 @@
           <li class="nav-item">
             <a href="{{route('dashboardpage3')}}" class="nav-link">
               <i class="link-icon" data-feather="home"></i>
-              <span class="link-title">Acceil</span>
+              <span class="link-title">Accueil</span>
             </a>
           </li>
           
@@ -107,7 +107,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
               <i class="link-icon" data-feather="inbox"></i>
-              <span class="link-title">Formilare</span>
+              <span class="link-title">Formulaire</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="forms">

@@ -1,5 +1,5 @@
 <link rel="icon" type="image/png" href="{{ asset('logo/favicon.png')}}">
-<title> Mauri - Developer | login</title>
+<title> Mauri - Developpeur | login</title>
 
 <x-guest-layout class="container" >
 

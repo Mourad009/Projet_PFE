@@ -57,8 +57,10 @@
        
 
        <br>
-       <p class="btn btn-inverse-info">NB : apres vous étez remplacer votre mot de passe si tu vais dans le site</p><br><br>
-
+       <div class="alert alert-info" role="alert">
+          <i data-feather="alert-circle"></i>
+          NB : apres vous étez remplacer votre mot de passe si tu vais dans le site
+        </div><br><br>
        
         <p>Si il ya un question tu peut me contactez nous a votre email suivant :</p>
         <br>
